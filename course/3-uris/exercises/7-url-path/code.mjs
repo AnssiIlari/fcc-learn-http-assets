@@ -1,6 +1,7 @@
-const url = 'https://api.boot.dev/v1/courses_rest_api/learn-http/users'
+const url = 'https://api.boot.dev/v1/courses_rest_api/learn-http/locations'
 
 // don't touch below this line
+// changed file type because use of top level await
 const apiKey = generateKey()
 const response = await fetch(url, {
   method: 'GET',
