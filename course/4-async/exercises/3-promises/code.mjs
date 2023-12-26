@@ -1,6 +1,12 @@
 const applyDamage = (damage, currentHP) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      const newHP = currentHP - damage
+      if (newHP <= 0) {
+        reject(`The player suffers ${damage} points of damage and has fallen unconscious.`)
+      } else {
+        resolve(`Player has ${newHP} HP remaining`)
+      }
       // ?
     }, 1000)
   })
