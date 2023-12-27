@@ -1,4 +1,5 @@
 function logContentType(resp) {
+  console.log(resp.headers.get('Content-Type'))
   // ?
 }
 
