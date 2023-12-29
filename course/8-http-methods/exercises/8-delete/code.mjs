@@ -1,5 +1,12 @@
 async function deleteUser(baseURL, id, apiKey) {
   const fullURL = `${baseURL}/${id}`
+  await fetch(fullURL, {
+    method: 'DELETE',
+    mode: 'cors',
+    headers: {
+      'X-API-Key': apiKey,
+    }
+  })
   // ?
 }
 

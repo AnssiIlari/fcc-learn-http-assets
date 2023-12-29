@@ -6,6 +6,7 @@ async function getUserCode(url, apiKey) {
       'X-API-Key': apiKey
     }
   })
+  return response.status
   // ?
 }
 

@@ -1,5 +1,14 @@
 async function createUser(apiKey, url, data) {
-  // ?
+  const response = await fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'X-API-Key': apiKey,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  return response.json()
 }
 
 // Test Suite Don't Touch Below This Line
